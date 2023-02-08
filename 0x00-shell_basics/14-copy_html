@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -exec bash -c '[[ ! -f ../${0##*/} || $0 -nt ../${0##*/} ]] && cp "$0" ".."' {} \;
+cp --update *.html ../
